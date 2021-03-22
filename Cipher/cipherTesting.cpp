@@ -4,14 +4,12 @@ using std::cout;
 using std::endl;
 int main(){
 
-  Cipher cipher;
+  Cipher cipher(6);
   string newString = cipher.encrypt("hello, this is an encrypted message. special symbols !@#$%^^&**()__+");
-  string anotherString = cipher.encrypt("HELLO");
-  string decryptedString1 = cipher.decrypt(newString);
-  string decryptedString2 = cipher.decrypt(anotherString);
+  string decryptedString = cipher.decrypt(newString);
   cout << newString << endl;
-  cout << anotherString << endl;
-  cout << decryptedString1 << endl;
-  cout << decryptedString2 << endl;
+  cout << decryptedString << endl;
+
+
   return 0;
 }
