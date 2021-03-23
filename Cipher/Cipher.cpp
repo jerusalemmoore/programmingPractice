@@ -1,5 +1,16 @@
-#include "Cipher.h"
+/*
+  Cipher.cpp
 
+  function definitions for a Caesar cipher object the encrypts and dectypts strings
+*/
+#include "Cipher.h"
+/*
+  default cipher constructor, doesn't encrypt unless steps is initialized with
+  overloaded constructor
+*/
+Cipher::Cipher(){
+  steps = 0;
+}
 /*
   Caesar cipher constructor takes number of steps with which to encrypt string
 
