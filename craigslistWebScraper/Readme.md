@@ -1,4 +1,4 @@
-Craigslist webscraper takes a currently accesses the sports items page on craigslist
+Craigslist webscraper currently accesses the sports items page on craigslist
 and creates a list of entries with a matching word to query, a max price, and a max number of products 
 to save to the list. This list includes the item name, price, and location if available.
 This list is saved to a txt file, on multiple executions, the script will see if a change in the 
